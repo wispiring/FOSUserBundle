@@ -1,7 +1,7 @@
 {
-    "name": "friendsofsymfony/user-bundle",
+    "name": "wispiring/fosuserbundle",
     "type": "symfony-bundle",
-    "description": "Symfony FOSUserBundle",
+    "description": "Fork of Symfony FOSUserBundle",
     "keywords": ["User management"],
     "homepage": "http://friendsofsymfony.github.com",
     "license": "MIT",
