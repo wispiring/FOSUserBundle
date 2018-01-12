@@ -45,9 +45,15 @@ registration:
             网站团队
 
 resetting:
-#    check_email: 系统向%email%发送了一封包含密码重置链接的邮件，请查收。
+    password_already_requested: '该用户在过去的24小时内，已经请求过一次找回密码了。'
+    check_email: |
+        系统发送了一封包含密码重置链接的邮件，请查收。
+        注意: 您只能在 %tokenLifetime% 小时内重新申请密码重置。
+
+        如果没有收到邮件，请检查垃圾邮件箱。
     request:
-        username: 用户名或邮箱
+        invalid_username: 用户名“%username%”不存在
+        username: 用户名或邮箱：
         submit: 重置密码
     reset:
         submit: 修改密码
@@ -61,7 +67,6 @@ resetting:
             请访问 %confirmationUrl% 以重置你的帐户密码。
 
             祝好
-            网站团队
 
 layout:
     logout: 退出
